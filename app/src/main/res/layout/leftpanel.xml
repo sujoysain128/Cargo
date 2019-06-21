@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="280dp"
+              android:layout_height="match_parent"
+              android:background="@color/appblackcolor"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/appblackcolor"
+            android:id="@+id/rl_housing_cell"
+            android:gravity="center"
+
+    >
+
+
+        <app.cargo.utils.CircularImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/leftmenu_image_profile"
+                android:id="@+id/iv_resource_thumb"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+        />
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/iv_resource_thumb">
+
+            <app.cargo.widgets.LatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe"
+                    android:textColor="#fff"
+                    android:textSize="25sp"/>
+
+
+            <app.cargo.widgets.LatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John@infomail.com"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:drawablePadding="5dp"
+                    android:paddingTop="4dp"
+                    android:drawableLeft="@mipmap/icon_email"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:id="@+id/ll_order">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/box"
+                android:tint="#fff"
+                android:layout_gravity="center"/>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orders"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/user"
+                android:tint="#fff"
+                android:layout_gravity="center"/>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/leftmenu_icon_manage_service"
+                android:layout_gravity="center"/>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+        />
+
+        <ImageView
+                android:layout_width="60dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/gray_line"
+                android:tint="@color/colorWhite"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/plus_circle"
+                android:layout_gravity="center"
+                android:tint="@color/colorWhite"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:id="@+id/iv_expand"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/remove"
+                android:layout_gravity="center"
+                android:tint="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:visibility="visible"
+                android:id="@+id/iv_collapse"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll_settings">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/notification"
+                    android:tint="@color/colorWhite"
+                    android:layout_gravity="center"/>
+
+
+            <app.cargo.widgets.LatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_my_address"
+                    android:tint="@color/colorWhite"
+                    android:layout_gravity="center"/>
+
+
+            <app.cargo.widgets.LatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saved Address"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/wallet"
+                    android:tint="@color/colorWhite"
+                    android:layout_gravity="center"/>
+
+
+            <app.cargo.widgets.LatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saved Cards"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_faq"
+                android:layout_gravity="center"/>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAQs"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_contactus"
+                android:layout_gravity="center"/>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_terms"
+                android:layout_gravity="center"/>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms and Condition"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_logout"
+                android:layout_gravity="center"/>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log out"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/my_shape"
+              android:clickable="true"
+              tools:context=".fragment.PickupAddressFragment">
+
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/my_shape"
+                android:id="@+id/rr_root_layout"
+                android:paddingBottom="20dp">
+
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rr_layout"
+            >
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/backarrow"
+                        android:layout_margin="25dp"
+                        android:id="@+id/iv_back"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/rr_layout">
+
+
+                <app.cargo.widgets.LatoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Area"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/tv_pick"/>
+
+                <app.cargo.widgets.LatoRegularEditTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="St. James Walk,Kuwait"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:textColorHint="@color/appblackcolor"
+                        android:layout_below="@+id/tv_pick"
+                        android:id="@+id/et_pick_up_address"/>
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="0.8dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_marginTop="10dp"
+                           android:background="@mipmap/gray_line"
+                           android:id="@+id/iv_view"
+                           android:layout_below="@+id/et_pick_up_address"/>
+
+                <!--for block design-->
+                <app.cargo.widgets.LatoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Block:"
+                        android:layout_below="@+id/iv_view"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/tv_block"/>
+
+                <app.cargo.widgets.LatoRegularEditTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="251/F"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:textColorHint="@color/appblackcolor"
+                        android:layout_below="@+id/tv_block"
+                        android:id="@+id/et_block"/>
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="0.8dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_marginTop="10dp"
+                           android:background="@mipmap/gray_line"
+                           android:id="@+id/iv_view_block"
+                           android:layout_below="@+id/et_block"/>
+
+
+                <!--for street design-->
+                <app.cargo.widgets.LatoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Street:"
+                        android:layout_below="@+id/iv_view_block"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/tv_street"/>
+
+                <app.cargo.widgets.LatoRegularEditTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ansuzamanis,Street"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:textColorHint="@color/appblackcolor"
+                        android:layout_below="@+id/tv_street"
+                        android:id="@+id/et_street"/>
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="0.8dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_marginTop="10dp"
+                           android:background="@mipmap/gray_line"
+                           android:id="@+id/iv_view_street"
+                           android:layout_below="@+id/et_street"/>
+
+
+                <!--for building design-->
+                <app.cargo.widgets.LatoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Building no:"
+                        android:layout_below="@+id/iv_view_street"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/tv_building"/>
+
+                <app.cargo.widgets.LatoRegularEditTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="106"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:textColorHint="@color/appblackcolor"
+                        android:layout_below="@+id/tv_building"
+                        android:id="@+id/et_building"/>
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="0.8dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_marginTop="10dp"
+                           android:background="@mipmap/gray_line"
+                           android:id="@+id/iv_view_building"
+                           android:layout_below="@+id/et_building"/>
+
+
+                <!--for type design-->
+                <app.cargo.widgets.LatoRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type of building :"
+                        android:layout_below="@+id/iv_view_building"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/tv_building_type"/>
+
+                <app.cargo.widgets.LatoRegularEditTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Residential"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:textColorHint="@color/appblackcolor"
+                        android:layout_below="@+id/tv_building_type"
+                        android:id="@+id/et_building_type"/>
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="0.8dp"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginRight="30dp"
+                           android:layout_marginTop="10dp"
+                           android:background="@mipmap/gray_line"
+                           android:id="@+id/iv_view_building_type"
+                           android:layout_below="@+id/et_building_type"/>
+
+
+                <!--Done layout-->
+                <app.cargo.widgets.LatoBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/curve_rectangle_box_login"
+                        android:textColor="@color/colorWhite"
+                        android:text="DONE"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:id="@+id/tv_done"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/iv_view_building_type"
+                />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

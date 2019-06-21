@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rr_root_layout">
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_back_only"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/iv_back"/>
+
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone number *"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorLoginTextBlack"/>
+
+        <app.cargo.widgets.LatoBoldEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableRight="@mipmap/tick_green"
+                android:hint="+512345674"
+                android:textColor="@color/colorLoginTextBlack"
+                android:textColorHint="@color/colorLoginTextgray"
+                android:background="@null"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:id="@+id/et_phone_number"/>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password *"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorLoginTextBlack"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+        android:weightSum="1">
+
+            <app.cargo.widgets.LatoBoldEditTextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="+512345674"
+                    android:textColor="@color/colorLoginTextBlack"
+                    android:textColorHint="@color/colorLoginTextgray"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+            />
+
+            <ToggleButton
+                    android:id="@+id/tb_pass_eye"
+                    android:layout_width="22dp"
+                    android:layout_height="14dp"
+                    android:background="@drawable/toggle_pass_eye"
+                    android:textOff=""
+                    android:textOn=""
+                    android:checked="true"
+                    android:layout_marginRight="10dp"
+            />
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/tick_green"
+                       android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm password *"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorLoginTextBlack"/>
+
+        <app.cargo.widgets.LatoBoldEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableRight="@mipmap/tick_green"
+                android:hint="+512345674"
+                android:textColor="@color/colorLoginTextBlack"
+                android:textColorHint="@color/colorLoginTextgray"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+        />
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area *"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorLoginTextBlack"/>
+
+        <app.cargo.widgets.LatoBoldEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableRight="@mipmap/tick_green"
+                android:hint="Greatet new ocean sea"
+                android:textColor="@color/colorLoginTextBlack"
+                android:textColorHint="@color/colorLoginTextgray"
+                android:background="@null"
+                android:inputType="textAutoComplete"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+        />
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Block *"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorLoginTextBlack"/>
+
+        <app.cargo.widgets.LatoBoldEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableRight="@mipmap/tick_green"
+                android:hint="Second block"
+                android:textColor="@color/colorLoginTextBlack"
+                android:textColorHint="@color/colorLoginTextgray"
+                android:background="@null"
+                android:inputType="textAutoComplete"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+        />
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:weightSum="1"
+                      android:layout_marginTop="40dp">
+
+
+            <app.cargo.widgets.LatoBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/appcolorviolet"
+                    android:textColor="@color/colorWhite"
+                    android:text="Next"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:id="@+id/tv_next_btn"
+
+            />
+            <ImageView android:layout_width="0dp"
+                       android:layout_height="49dp"
+                       android:layout_weight=".2"
+                       android:src="@mipmap/right"
+                       android:padding="5dp"
+                       android:tint="@color/colorWhite"
+                       android:background="#7F2FBA"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+        >
+
+            <app.cargo.widgets.LatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Already have an account?"/>
+
+            <app.cargo.widgets.LatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Log in"
+                    android:id="@+id/tv_log_in_sign_up"
+                    android:textColor="@color/appcolorviolet"
+                    android:padding="5dp"
+                    android:textSize="17sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

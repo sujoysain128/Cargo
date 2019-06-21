@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1"
+              android:background="#161515">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:layout_weight=".2"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/cargo_logo"
+                android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/my_shape"
+            android:layout_weight=".8"
+            android:orientation="vertical">
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name *"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+        android:textColor="@color/colorLoginTextBlack"/>
+
+        <app.cargo.widgets.LatoBoldEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableRight="@mipmap/tick_green"
+                android:hint="John Doe"
+                android:textColor="@color/colorLoginTextBlack"
+                android:textColorHint="@color/colorLoginTextgray"
+                android:background="@null"
+                android:inputType="phone"/>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Id"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+        android:textColor="@color/colorLoginTextBlack"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+        >
+            <app.cargo.widgets.LatoBoldEditTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="hello@infomail.com"
+                    android:textColor="@color/colorLoginTextBlack"
+                    android:textColorHint="@color/colorLoginTextgray"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionDone"
+                    android:paddingBottom="8dp"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/tick_green"
+
+            />
+
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:weightSum="1"
+                      android:id="@+id/tv_next_page"
+                      android:layout_marginTop="20dp">
+
+
+            <app.cargo.widgets.LatoBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/appcolorviolet"
+                    android:textColor="@color/colorWhite"
+                    android:text="Next"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:id="@+id/tv_next"
+
+            />
+            <ImageView android:layout_width="0dp"
+                       android:layout_height="49dp"
+                       android:layout_weight=".2"
+                       android:src="@mipmap/right"
+                       android:padding="5dp"
+                       android:tint="@color/colorWhite"
+                       android:background="#7F2FBA"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+        >
+
+            <app.cargo.widgets.LatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Already have an account?"/>
+
+            <app.cargo.widgets.LatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Log in"
+                    android:id="@+id/tv_log_in"
+                    android:textColor="@color/appcolorviolet"
+                    android:padding="5dp"
+            android:textSize="17sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

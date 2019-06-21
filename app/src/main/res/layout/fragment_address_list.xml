@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/my_shape"
+             tools:context=".fragment.AddressListFragment"
+             android:clickable="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_shape"
+            android:id="@+id/rr_root_layout">
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/backarrow"
+                android:layout_margin="25dp"
+                android:id="@+id/iv_back"/>
+
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_back"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/rv_address_list">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</FrameLayout>

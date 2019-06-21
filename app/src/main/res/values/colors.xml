@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#0F0F0F</color>
+    <color name="colorAccent">#1A1818</color>
+    <color name="appcolorviolet">#6722A3</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorLoginTextBlack">#282828</color>
+    <color name="colorLoginTextgray">#888</color>
+    <color name="appblackcolor">#050505</color>
+    <color name="transparent">#80000000</color>
+
+    <color name="tranparent">#9A232320</color>
+</resources>

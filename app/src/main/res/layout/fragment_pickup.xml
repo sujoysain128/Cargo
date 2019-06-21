@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              tools:context=".fragment.PickupFragment"
+              android:background="@drawable/my_shape"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_shape"
+            android:id="@+id/rr_root_layout">
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/backarrow"
+                android:layout_margin="25dp"
+                android:id="@+id/iv_back"/>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup"
+                android:layout_below="@+id/iv_back"
+                android:textSize="15sp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/tv_pick"/>
+
+        <app.cargo.widgets.LatoRegularEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="St. James Walk,Kuwait"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:textSize="18sp"
+                android:background="@null"
+                android:layout_below="@+id/tv_pick"
+                android:id="@+id/et_pick_up_address"/>
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="0.8dp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginTop="10dp"
+                   android:background="@mipmap/gray_line"
+                   android:id="@+id/iv_view"
+                   android:layout_below="@+id/et_pick_up_address"/>
+
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dropoff"
+                android:layout_below="@+id/iv_view"
+                android:textSize="15sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/tv_drop"/>
+
+
+        <app.cargo.widgets.LatoRegularEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wigmore St.,Kuwait"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:textSize="18sp"
+                android:background="@null"
+                android:layout_below="@+id/tv_drop"
+                android:id="@+id/et_drop_address"/>
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="0.8dp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginTop="10dp"
+                   android:background="@mipmap/gray_line"
+                   android:id="@+id/iv_view_drop"
+                   android:layout_below="@+id/et_drop_address"/>
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/btn_collaps"
+                android:layout_margin="16dp"
+                android:tint="#fff"
+                app:backgroundTint="@color/appcolorviolet"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

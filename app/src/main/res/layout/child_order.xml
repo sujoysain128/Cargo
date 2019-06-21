@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_margin="5dp"
+              android:background="@drawable/order_list_shape">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="1"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="5dp"
+                  android:layout_marginRight="15dp"
+                  android:layout_marginLeft="15dp"
+    >
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:text="Consignment tracking no :"
+
+        />
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:text="CT1023"
+                android:textSize="17sp"
+                android:textColor="@color/appblackcolor"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="1"
+                  android:orientation="horizontal"
+                  android:layout_marginRight="15dp"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginBottom="5dp"
+    >
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:text="Exp Delivery date :"
+        />
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:text="May 30,2019"
+                android:textSize="17sp"
+
+                android:textColor="@color/appblackcolor"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:weightSum="1"
+                  android:orientation="horizontal"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp"
+                  android:layout_marginBottom="5dp"
+    >
+
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:text="Status :"
+        />
+        <app.cargo.widgets.LatoRegularTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:text="Awaiting pickup"
+                android:textSize="17sp"
+                android:textColor="@color/appcolorviolet"
+        />
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#F1F1F1"
+            android:layout_marginTop="5dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginBottom="15dp"
+                  android:layout_marginTop="5dp"
+    >
+
+        <LinearLayout android:layout_width="60dp"
+                      android:layout_height="25dp"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginLeft="15dp"
+                      android:gravity="center"
+                      android:foregroundTint="@color/appblackcolor"
+                      android:background="@drawable/capsule_shape"
+                      android:id="@+id/ll_track"
+
+        >
+
+            <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/icon_my_address"
+                    android:layout_marginRight="5dp"
+
+            />
+            <app.cargo.widgets.LatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorWhite"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="90dp"
+                      android:layout_height="25dp"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginLeft="35dp"
+                      android:gravity="center"
+                      android:background="@drawable/capsule_shape_violet"
+
+        >
+
+            <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/icon_contact_phone"
+                    android:layout_marginRight="5dp"
+
+            />
+            <app.cargo.widgets.LatoRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact driver"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorWhite"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
